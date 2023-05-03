@@ -4,46 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DocPass</title>
-  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+  <title>Coming Soon</title>
   <style>
-    body,
-    html {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      background: #000
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
     }
 
-    .bg-image {
-      background-image: url("./assets/images/docpass-logo.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 9999;
+    img {
+      max-width: 200px;
+      height: auto;
     }
 
-    /* Ensure proper text display on mobile devices */
-    @media (max-width: 768px) {
-      body {
-        font-size: 14px;
-        line-height: 1.5;
-        word-wrap: break-word;
+    .slogan {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    .coming-soon {
+      font-size: 1.2em;
+      margin-top: 20px;
+      color: #555;
+    }
+
+    @media screen and (max-width: 480px) {
+      img {
+        max-width: 150px;
       }
 
-      /* Adjust any other styles for mobile devices here */
+      .slogan {
+        font-size: 1.2em;
+      }
+
+      .coming-soon {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="bg-image"></div>
+  <img src="./assets/images/dp.png" alt="Your Logo">
+  <div class="slogan">DocPass</div>
+  <div class="coming-soon">Dropping Soon</div>
 </body>
 
 </html>
