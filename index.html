@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full Page Background Image</title>
+  <title>docpass</title>
   <style>
     body,
     html {
@@ -18,13 +18,24 @@
       background-image: url("./assets/images/docpass-logo.png");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100% auto;
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       z-index: -1;
+    }
+
+    /* Ensure proper text display on mobile devices */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+        line-height: 1.5;
+        word-wrap: break-word;
+      }
+
+      /* Adjust any other styles for mobile devices here */
     }
   </style>
 </head>
