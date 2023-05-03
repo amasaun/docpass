@@ -23,7 +23,7 @@
       max-width: 100%;
       overflow-x: hidden;
       min-height: 100%;
-      /* padding-bottom: 60px; */
+      padding-bottom: 60px;
       /* Adjust padding to match footer height */
     }
 
@@ -62,10 +62,16 @@
       color: #555;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px 0;
-      font-size: 0.9em;
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .social-icons a {
+      color: #1DA1F2;
+      text-decoration: none;
+      margin: 0 5px;
     }
 
     @media screen and (max-width: 480px) {
@@ -91,9 +97,12 @@
     <div class="coming-soon">Dropping Soon</div>
   </main>
   <footer>
-    <a href="https://twitter.com/docpassofficial" target="_blank" rel="noopener noreferrer" class="twitter-link">
-      <i class="fab fa-twitter"></i>
-    </a>
+    <div class="social-icons">
+      <a href="https://twitter.com/your_twitter_handle" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <!-- Add more social media icons here -->
+    </div>
     &copy; 2023 DocPass. All rights reserved.
   </footer>
 </body>
