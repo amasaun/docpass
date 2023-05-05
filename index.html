@@ -11,14 +11,19 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
   </style>
   <style>
+    html,
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
+      height: 100%;
+    }
+
+    .wrapper {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      min-height: 100vh;
+      min-height: 100%;
       text-align: center;
     }
 
@@ -65,9 +70,9 @@
       margin: 0 5px;
     }
 
-    .social-icons a.linkedin {
+    /* .social-icons a.linkedin {
       color: #0077B5;
-    }
+    } */
 
     @media screen and (max-width: 900px) {
       img {
@@ -91,13 +96,10 @@
     }
 
 
+
     @media screen and (max-width: 480px) {
       img {
         max-width: 100px;
-      }
-
-      body {
-        min-height: 80vh;
       }
 
       .slogan {
@@ -114,23 +116,25 @@
 </head>
 
 <body>
-  <main>
-    <img src="./assets/images/dp.png" alt="Your Logo">
-    <div class="slogan">DocPass</div>
-    <div class="coming-soon">Dropping Soon</div>
-  </main>
-  <footer>
-    <div class="social-icons">
-      <a href="https://twitter.com/docpassofficial" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://www.linkedin.com/company/docpass" target="_blank" rel="noopener noreferrer" class="linkedin">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <!-- Add more social media icons here -->
-    </div>
-    &copy; 2023 DocPass. All rights reserved.
-  </footer>
+  <div class="wrapper">
+    <main>
+      <img src="./assets/images/dp.png" alt="Your Logo">
+      <div class="slogan">DocPass</div>
+      <div class="coming-soon">Dropping Soon</div>
+    </main>
+    <footer>
+      <div class="social-icons">
+        <a href="https://twitter.com/docpassofficial" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/docpass" target="_blank" rel="noopener noreferrer" class="linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <!-- Add more social media icons here -->
+      </div>
+      &copy; 2023 DocPass. All rights reserved.
+    </footer>
+  </div>
 </body>
 
 </html>
